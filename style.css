@@ -51,8 +51,9 @@ html {
 }
 
 
+
 .fondo {
-    background-image: url(/img/business-man-2452808_1920.jpg);
+    background-image: url(img/business-man-2452808_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     object-fit: contain;
