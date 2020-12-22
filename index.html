@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    
-    <link rel="icon" href="img/maleta.svg">
+
+    <link rel="icon" href="img/Mi logo.svg">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
@@ -23,11 +23,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
 </head>
 
 <body>
     <header class="container-nav">
-        <img src="img/iconfinder-rootaccess-4417096_116625.svg" alt="" class="logo">
+        <img src="img/Mi logo.svg" alt="" class="logo">
         <div class="menu">
             <ul class="nav-ul">
                 <li><a href="#inicio" class="nav"><i class="fas fa-home"></i>Inicio</a></li>
@@ -39,25 +51,33 @@
     </header>
 
     <main>
-        <section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <section class="portada">
             <a name="inicio"></a>
-            <div class="fondo"></div>
-            <h1 class="text-portada">¡Bienvenidos a mi portafolio!</h1>
+            <div>
+                <h1 class="text-portada">¡Bienvenidos a mi portafolio!</h1>
+                <button><b>Empecemos! </b> </button>
+            </div>
+            <img src="img/portafolio.png" alt="">
         </section>
         <a name="acerca"></a>
-       
+
         <article class="presentacion">
             <img class="yo" src="img/WhatsApp Image 2020-12-01 at 11.54.05 AM.jpeg" alt="">
             <div class="presentacion-derecha">
 
-                
+
                 <h2>Acerca de mi</h2>
                 <p class="uno">Hola, Bienvenido! Mi nombre es Daniel Estupiñán Ramos pero me puedes decir Dani. Tengo 18
                     años me gusta el futbol, las computadoras y viajar</p>
 
                 <br>
                 <p>Soy técnico en análisis de muestras químicas y actualmente soy estudiante de ingeniería civil en la
-                    Universidad Del Valle, Cali. Manejo los lenguajes de HTML, CSS, SAS en un nivel avanzado y Python en un nivel básico</p>
+                    Universidad Del Valle, Cali. Manejo los lenguajes de HTML, CSS, SAS en un nivel avanzado y Python en
+                    un nivel básico</p>
 
                 <div class="logos">
                     <img src="img/html-5.svg" alt="" title="Html5">
@@ -70,52 +90,105 @@
 
         <article>
             <a name="trabajos"></a>
-            <h2>Algunos de mis proyectos</h2>
-        </article>
+            <h2 class="title-proyectos">Algunos de mis proyectos</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/podcast2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5> <a href="https://daniel08022.github.io/Podcast-SAS/" title="Podcast" target="_blank">
+                                    <img src="img/logo.svg" alt=""></a>Podcast</h5>
+                            <p>Es un sitio web estático responsivo creado a partir de HTML, CSS y anidado con SAS.
+                                Desde el sitio vas a poder escuchar podcasts reales que estan embebidos junto con
+                                imágenes y texto relacionados a su contenido. Esta diseñado con una visión mobile first,
+                                adaptada a pantallas más grandes para que funcione en todas ellas. Entra
 
-        <article>
-            <a name="contacto"> </a>
-
-            <div class="contacto">
-
-                <div class="contacto-left">
-                    <h2>Contacto</h2>
-                    <img src="img/email.svg" alt="" class="email">
-
+                                <a href="https://daniel08022.github.io/Podcast-SAS/" title="Footer Daniel"
+                                    target="_blank">
+                                    aquí </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/footer.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><img src="img/Mi logo.svg" alt=""> Footer</h5>
+                            <p>Footer Entra <a href="https://daniel08022.github.io/Footer-1/" title="Footer Daniel"
+                                    target="_blank">Aquí</a> </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Imagen1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5> <img src="img/Mi logo.svg" alt="">Formulario</h5>
+                            <p>Formulario con una paleta de colores vivos, creado apartir de HTML y CSS totalmente
+                                funcional, adaptado a todos los dispositivos. Entra <a
+                                    href="https://daniel08022.github.io/Formulario-1/" title="Mi formulario"
+                                    target="_blank">Aquí</a> </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form">
-
-
-                    <input type="name" placeholder="Ingrese su nombre" required class="input one">
-                    <input type="name" placeholder="Ingrese su apellido" class="input">
-                    <input type="email" placeholder="Ingrese su email" required class="input">
-
-                    <select name="pais" id="" class="select">
-                        <option value="">Seleccione un país</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Brasil">Brasil</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Perú">Perú</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Venezuela">Venezuela</option>
-
-                    </select>
-
-                    <textarea name="mensaje" id="" cols="30" rows="5" placeholder="Deje su mensaje" class="mensaje"></textarea>
-
-                    <input type="submit" class="buttom">
-
-                </div>
-
+                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
             </div>
 
         </article>
 
-        <br><br><br>
+        <article>
+
+            <div class="container-form">
+
+                <div class="title-form">
+                    <h2>Contacto</h2>
+                </div>
+
+                <div class="info">
+                    <div class="direccion">
+                        <img src="img/ubi.png" alt="">
+                        <h3>Dirección</h3>
+                        <p>Palmira, Valle Del Cauca, Colombia</p>
+                    </div>
+                    <div class="email">
+                        <img src="img/mail.png" alt="">
+                        <h3>Mi Email</h3>
+                        <p>Danielestupinan0802@gmail.com</p>
+                    </div>
+                    <div class="tel">
+                        <img src="img/tel.png" alt="">
+                        <h3> Llamame </h3>
+                        <p>+57 3054339035  <br> +57 3156985569</p>
+                    </div>
+                </div>
+
+                <form action="">
+
+                    <div class="arriba">
+                        <input type="name" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Ingrese su email" required>
+                    </div>
+                    <div class="abajo">
+                        <input type="text" placeholder="Asunto" required>
+                    </div>
+                    <textarea name="texto" id="texto" cols="20" rows="5" placeholder="Deje su mensaje"></textarea>
+
+                </form>
+                <br><br><br>
+
+
+            </div>
+        </article>
+
     </main>
 
     <footer>
