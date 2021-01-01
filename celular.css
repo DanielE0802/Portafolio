@@ -1,0 +1,55 @@
+@media screen and (max-width:580px) {
+
+    .logo {
+        width: 30px;
+        margin-left: 50px;
+
+    }
+
+    .portada img {
+        padding-right: 20px;
+        width: 47vw;
+
+    }
+
+    .portada{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .portada img{
+        align-self: center;
+        order: -1;
+        padding-right: 0px;
+    }
+
+    .portada div button {
+        background: transparent;
+        border: #3498DB solid 2px;
+        border-radius: 80%;
+        width: 200px;
+
+        font-size: 14px;
+
+        padding: 6px 15px;
+        border-radius: 50px;
+        outline: none;
+        color: #3498db;
+      
+    }
+
+    .text-portada {
+        font-size: 6vw;
+        max-width: 400px;
+        margin: 30px 0px 10px 0px;
+    }
+
+    .title-proyectos {
+        margin-top: 70px;
+
+    }
+
+
+
+}
