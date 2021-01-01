@@ -7,6 +7,9 @@ html {
     box-sizing: border-box;
 }
 
+.acerca{
+    display: none;
+}
 
 
 .container-nav {
