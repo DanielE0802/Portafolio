@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="tablet.css">
 
     <link rel="icon" href="img/Mi logo.svg">
 
@@ -34,10 +35,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-
 </head>
 
 <body>
+
     <header class="container-nav">
         <img src="img/Mi logo.svg" alt="" class="logo">
         <div class="menu">
@@ -74,7 +75,7 @@
                 <p class="uno">Hola, Bienvenido! Mi nombre es Daniel Estupiñán Ramos pero me puedes decir Dani. Tengo 18
                     años me gusta el futbol, las computadoras y viajar</p>
 
-                <br>
+            
                 <p>Soy técnico en análisis de muestras químicas y actualmente soy estudiante de ingeniería civil en la
                     Universidad Del Valle, Cali. Manejo los lenguajes de HTML, CSS, SAS en un nivel avanzado y Python en
                     un nivel básico</p>
@@ -167,24 +168,27 @@
                     <div class="tel">
                         <img src="img/tel.png" alt="">
                         <h3> Llamame </h3>
-                        <p>+57 3054339035  <br> +57 3156985569</p>
+                        <p>+57 3054339035 <br> +57 3156985569</p>
                     </div>
                 </div>
 
-                <form action="">
+                <form action="" id="formulario" method="POST">
 
                     <div class="arriba">
-                        <input type="name" placeholder="Tu nombre" required>
-                        <input type="email" placeholder="Ingrese su email" required>
+                        <input type="name" placeholder="Tu nombre" required name="nombre">
+                        <input type="email" placeholder="Ingrese su email" required name="correo">
                     </div>
                     <div class="abajo">
-                        <input type="text" placeholder="Asunto" required>
+                        <input type="text" placeholder="Asunto" required name="asunto">
                     </div>
-                    <textarea name="texto" id="texto" cols="20" rows="5" placeholder="Deje su mensaje"></textarea>
+                    <textarea name="texto" id="texto" cols="20" rows="5" placeholder="Deje su mensaje"
+                        name="texto"></textarea>
 
+                    <input type="submit" placeholder="" id="enviar">
                 </form>
                 <br><br><br>
 
+                <div id="respuesta"></div>
 
             </div>
         </article>
@@ -192,8 +196,18 @@
     </main>
 
     <footer>
+        <div class="derechos">
+            <img src="img/derechos-de-autor.png" alt="">
+            <span>Todos los derechos reservados 2020.</span>
+        </div>
+        <div class="redes">
+            <a href=""><img src="img/facebook.png" alt=""></a>
+            <a href=""><img src="img/instagram.png" alt=""></a>
+            <a href=""> <img src="img/github.png" alt=""></a>
 
+        </div>
     </footer>
 </body>
+
 
 </html>

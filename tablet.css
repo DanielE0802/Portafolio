@@ -1,0 +1,126 @@
+@media screen and (max-width:1050px) {
+
+    /*Falta hacer el nav el menu hamburguesa*/
+
+    .nav-ul {
+        display: none;
+    }
+
+
+    .logo {
+        width: 33px;
+        margin-left: 100px;
+        fill: #FFF;
+        margin-top: 0px;
+    }
+
+    .portada img {
+        padding-right: 20px;
+        width: 47vw;
+
+    }
+
+
+    .portada div button {
+        width: 30vw;
+    }
+
+    .text-portada {
+        font-size: 6vw;
+        max-width: 400px;
+    }
+
+    .title-proyectos {
+        margin-top: 70px;
+
+    }
+    
+
+    .presentacion {
+        padding: 14vh 8.5vw  0px 8.5vw;
+    }
+
+    .yo {
+        width: 30vw;
+        min-width: 220px;
+    }
+
+    .presentacion-derecha {
+
+        padding-left: 6vw;
+        min-width: 200px;
+    }
+
+    .uno {
+        padding-top: 30px;
+    }
+
+    .logos {
+        padding-top: 15px;
+
+    }
+
+    .logos img {
+        width: 10vw;
+        padding: 18px;
+
+    }
+
+
+    .title-form h2 {
+        font-size: 5vw;
+        margin-top: 80px;
+
+    }
+
+
+    .info {
+
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 40px;
+
+        flex-wrap: wrap;
+    }
+
+    .direccion {
+        margin: 0px 2% 0px 2%;
+        padding: 20px 0 30px 0;
+        width: 35vw;
+        margin-bottom: 30px;
+        min-width: 100px;
+        flex-grow: 1;
+    }
+
+    .email {
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0 30px 0;
+        margin-bottom: 30px;
+        width: 100%;
+        order: -1;
+    }
+
+    .tel {
+        margin: 0px 2% 0px 2%;
+        margin-bottom: 30px;
+        width: 35vw;
+        min-width: 100px;
+        flex-grow: 1;
+    }
+
+    form {
+        margin: 0px 50px 100px 0px;
+        padding: 20px 0 30px 0;
+        margin-bottom: 30px;
+
+
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 70px;
+    }
+
+
+}
