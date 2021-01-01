@@ -15,12 +15,13 @@
     .portada{
         flex-direction: column;
         justify-content: center;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     .portada img{
         align-self: center;
         order: -1;
+        width: 80vw;
         padding-right: 0px;
     }
 
@@ -29,9 +30,7 @@
         border: #3498DB solid 2px;
         border-radius: 80%;
         width: 200px;
-
         font-size: 14px;
-
         padding: 6px 15px;
         border-radius: 50px;
         outline: none;
@@ -40,9 +39,9 @@
     }
 
     .text-portada {
-        font-size: 6vw;
+        font-size: 10vw;
         max-width: 400px;
-        margin: 30px 0px 10px 0px;
+        margin: 50px 0px 10px 0px;
     }
 
     .title-proyectos {
