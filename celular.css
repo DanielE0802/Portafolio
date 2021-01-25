@@ -1,5 +1,50 @@
 @media screen and (max-width:580px) {
 
+    ul {
+        display: none;
+    }
+
+    .menu input{
+        display: inline-block;
+        width: 40px;
+        height: 32px;
+        opacity: 1;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .menu input[type="checkbox"]:checked ~ ul {
+        height: 224px;
+        transition: height 0.5s ease-in-out;
+
+    }
+
+    .menu-ul {
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        overflow: hidden;
+        list-style: none;
+        background: #0000EC;
+        height: 0px;
+        transition: height 0.5s ease;
+    }
+
+    .menu span{
+        display: block;
+        width: 25px;
+        height: 2.5px;
+        margin-bottom: 6.5px;
+        position: relative;
+        background: #000000;
+        transform-origin: 3px 0px;
+        transition: transform 0.5s ease,
+            opacity 0.55s ease;
+        margin-right: 19px;
+    }
+
+
     .logo {
         width: 30px;
         margin-left: 50px;
@@ -103,6 +148,7 @@
         box-shadow: 1px 1px 3px 3px rgba(68, 68, 68, 0.371);
         z-index: 0;
         margin: 0px 10px 10px 10px;
+
     }
     
 
