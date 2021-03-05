@@ -3,7 +3,7 @@ $destino = "danielestupinan0802@gmail.com";
     $email = $_POST["mail"];
     $mensaje = $_POST["message"];
     $contenido = "Nombre: " . $nombre . "\nCorreo: " . $email . "\nAsunto: " . $mensaje;
-    mail($destino, "Contacto", $contenido);
+    mail($destino, $contenido);
     header("Location:index.html);
 //Esto es opcional, aqui pueden colocar un mensaje de "enviado correctamente" o redireccionarlo a algun lugar
 ?>
