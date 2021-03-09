@@ -1,0 +1,171 @@
+.title-form {
+
+    h2 {
+        font-size: 3em;
+        font-family: $jost;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 80px;
+
+        &::before {
+            content: "";
+            border-left: #3498db 5px solid;
+            margin-right: 5px;
+        }
+    }
+
+
+
+}
+
+.info {
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 26px;
+    justify-content: center;
+
+    .direccion {
+        background: #fff;
+        margin: 0px 50px 100px 0px;
+        color: #222;
+        text-align: center;
+        box-shadow: 0px 0px 30px #3498db6e;
+        padding: 20px 0 30px 0;
+        margin-bottom: 30px;
+        width: 100%;
+        font-family: $open;
+
+    }
+
+    .email {
+        @extend .direccion;
+    }
+
+    .tel {
+        @extend .email;
+    }
+
+    img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+
+form {
+    background: #fff;
+    color: #444;
+    box-shadow: 0px 0px 30px #3498db6e;
+    font-family: $open;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 140px;
+    margin-right: 190px;
+
+    .arriba {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 20px;
+
+        input {
+            width: 45%;
+            height: 40px;
+
+        }
+    }
+
+    .abajo {
+        width: 93.2%;
+        margin-top: 20px;
+
+        input {
+            width: 100%;
+            height: 40px;
+            margin-left: 3.7%;
+        }
+    }
+
+    textarea {
+        width: 93.2%;
+        margin-left: 3.5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: $open;
+
+        &::placeholder {
+            padding-left: 5px;
+        }
+
+        &:focus {
+            color: #555;
+            padding-left: 5px;
+            // background: linear-gradient(to bottom, transparent, #3498db43);
+            outline: none;
+            overflow: none;
+            border: 1px rgba(85, 85, 85, 0.638) solid;
+        }
+    }
+
+    input[type=submit]{
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #53b4f5;
+        width: 80px;
+        font-size: 16px;
+        font-family: $jost;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+        margin-left: 47%;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.08);
+            border-bottom: 2px solid #3498db ;
+        }
+    }
+
+    input {
+        &::placeholder {
+            padding-left: 5px;
+        }
+
+        &:focus {
+            @extend textarea:focus;
+        }
+
+    }
+
+}
+
+.redes-sociales {
+    position: absolute;
+    height: 57vh;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+    left: 17px;
+    li {
+        position: relative;
+        margin: 7px;
+        list-style: none;
+        transition: transform .4s ease;
+      
+        a {
+          
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+}

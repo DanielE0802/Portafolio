@@ -1,0 +1,195 @@
+// .proyecto1{
+//     background: linear-gradient(120deg,
+//     #473b7b 0%,
+//     #3584a7 20%,
+//     #30d2be 100%);
+// }
+
+// .proyecto2{
+//     background: linear-gradient(120deg,
+//     #30d2be 0%,
+//     #3584a7 70%,
+//     #473b7b 80%);
+// }
+.galeria {
+    display: flex;
+    width: 85%;
+    padding-top: 75px;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    .foto {
+        width: 460px;
+        height: 270px;
+        position: relative;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+        transition: 0.6s ease;
+
+        .miGithub {
+            img {
+                width: 460px;
+                height: 270px;
+                object-fit: scale-down;
+            }
+
+        }
+
+
+        img {
+            width: 460px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .overlay {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(-225deg,
+                    #473b7b 0%,
+                    #3584a7 51%,
+                    #30d2be 100%);
+            width: 100%;
+            height: 0;
+            transition: 0.55s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            h5 {
+                color: #fff;
+                font-size: 25px;
+                font-family: 'Josefin Sans', sans-serif;
+                text-align: center;
+                padding-bottom: 10px;
+
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                    transform: translateY(2px);
+                }
+            }
+
+            p {
+                color: #fff;
+                font-size: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+                font-family: 'Raleway', sans-serif;
+                text-align: justify;
+                margin-left: 20px;
+                margin-right: 20px;
+
+
+            }
+
+            a {
+                padding-top: 5px;
+                font-size: 14px;
+                font-family: 'Raleway', sans-serif;
+                color: #d8d8d8;
+                text-decoration: none;
+                transition: all .3s ease;
+
+                &:hover {
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}
+
+.correciones-galeria {
+    width: 75%;
+    padding-top: 75px;
+    margin-left: 250px;
+}
+
+
+.container-title {
+    width: 60px;
+    height: 74vh;
+    position: absolute;
+    margin-left: calc(10.3vw - 15px);
+    margin-top: 19vh;
+}
+
+
+.title-proyectos {
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 900;
+    width: 80px;
+    text-align: center;
+    color: #222;
+    font-family: $josefin;
+    text-transform: uppercase;
+    position: absolute;
+    border-bottom: 5px solid #53b4f5;
+}
+
+.foto:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*---------------------*/
+
+.contenedor-modal.active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.contenedor-modal.active img {
+    z-index: 3;
+    width: 700px;
+    height: 700px;
+}
+
+.contenedor-modal.active::after {
+    position: fixed;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(211, 211, 211, 0.459);
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #3584a7;
+    margin-top: 100px;
+    &::after{
+        content: "Siguiente";
+    }
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #3584a7 transparent transparent;
+    margin-top: 100px;
+    z-index: 1000;
+}

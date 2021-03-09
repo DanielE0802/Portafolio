@@ -1,0 +1,55 @@
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 70px 10px 70px;
+    
+    img{
+        width: 50px;
+        margin-left: 80px;
+    }
+    
+
+    li,a{
+        display: inline-block;
+        margin: 10px;
+       
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $josefin;
+        font-size: 19px;
+        color: #c2c2c2;
+        &:hover{
+            transition: all .5s ease;
+            color: #fff;
+            
+        }
+        
+
+    }
+
+    .active{
+        border-bottom: 3px solid #fff;
+        transition: all .5s ease;
+
+        a{
+            color: #fff;
+            &:hover{
+                transition: all .5s ease;
+                color: #30d2be;
+                
+            }
+        }
+
+        &:hover{
+            border-bottom: 3px solid #30d2be;
+            transition: all .5s ease;
+        }
+    }
+
+}
+

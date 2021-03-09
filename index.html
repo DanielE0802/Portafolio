@@ -2,308 +2,361 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="tablet.css">
-    <link rel="stylesheet" href="celular.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/Mi logo.svg">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css">
+    <link rel="stylesheet" href="scss/style.min.css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+    <title>Daniel Estupiñán R</title>
 </head>
 
 <body>
+    <nav class="nav">
+        <img src="img/Mi logo.svg" class="logo" alt="Daniel Estupiñán" title="Daniel Estupiñán">
+        <ul id="miMenu" class="menu">
+            <li data-menuanchor="Inicio" class="active">
+                <a href="#Inicio">Inicio</a>
+            </li>
+            <li data-menuanchor="Acerca">
+                <a href="#Acerca">Acerca</a>
+            </li>
+            <li data-menuanchor="Skills">
+                <a href="#Skills">Skills</a>
+            </li>
+            <li data-menuanchor="Proyectos">
+                <a href="#Proyectos">Proyectos</a>
+            </li>
+            <li data-menuanchor="Contacto">
+                <a href="#Contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
 
-    <header class="container-nav">
-        <img src="img/Mi logo.svg" alt="" class="logo">
-        <div class="menu ">
-            <input type="checkbox" class="input" id="input">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="nav-ul">
-                <li><a href="#inicio" class="nav"><i class="fas fa-home"></i>Inicio</a></li>
-                <li><a href="#mi" class="nav"><i class="fas fa-paperclip"></i>Acerca de mi</a></li>
-                <li><a href="#trabajos" class="nav"><i class="fas fa-briefcase"></i>Trabajos</a></li>
-                <li><a href="#contacto" class="nav"><i class="fas fa-address-book"></i> Contacto</a></li>
-            </ul>
-        </div>
-    </header>
+    <!--BARRA IZQUIERDA DE REDES SOCIALES-->
+    <div class="redes-sociales">
+        <ul>
 
-    <main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-        </script>
-        <script src="js/bootstrap.min.js"></script>
-        <section class="portada">
-            <a name="inicio"></a>
-            <div>
-                <h1 class="text-portada">¡Bienvenidos a mi portafolio!</h1>
-                <a href="#mi"><b>Empecemos! </b> </a>
+            <li>
+                <a href="www.linkedin.com/in/daniel-estupiñán" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://github.com/DanielE0802" target="_blank"><img src="img/github.png" alt=""></a>
+            </li>
+
+        </ul>
+    </div>
+
+    <main id="fullpage">
+
+        <!--INICIO-->
+        <header class="section">
+
+            <div class="principal">
+
+                <div class="cont-texto">
+                    <div class="texto-izquierdo">
+                        <h1 class="titulo">¡Bienvenidos a mi portafolio!</h1>
+                        <a class="btnEmpecemos" href="#mi"><b>Empecemos! </b> </a>
+                    </div>
+                    <div class="texto-derecho">
+                        <img src="img/code.png" alt="">
+                        <h1>Daniel Estupiñán</h1>
+                        <h2>Web Developer</h1>
+                    </div>
+
+                    <div class="contenedor-icono">
+                        <p><a href="#" class="colorP">
+                                <i class="fas fa-chevron-down"></i>
+                            </a></p>
+                    </div>
+
+                </div>
+                <div class="ola" style="height: 150px; overflow: hidden;">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M0.00,49.98 C86.05,146.53 273.98,-84.38 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                            style="stroke: none; fill: #fff;"></path>
+                    </svg>
+                </div>
+
             </div>
-            <img src="img/portafolio.png" alt="">
+
+        </header>
+
+        <!--ACERCA DE MI-->
+        <section class="section">
+            <div class="presentacion">
+                <div class="presentacion-izquierda">
+                    <img class="yo" src="img/WhatsApp Image 2021-02-19 at 4.19.22 PM.jpeg" alt="" id="mi">
+                </div>
+
+                <div class="presentacion-derecha">
+                    <h2>Acerca de mi</h2>
+                    <p class="uno">Hola, Bienvenido! Mi nombre es Daniel Estupiñán Ramos pero me puedes decir Dani.
+                        Tengo 19
+                        años me gusta el futbol, las computadoras y viajar.</p>
+
+
+                    <p>Desarrollador web full stack con Protalento y estudiante de ingeniería civil en la
+                        Universidad Del
+                        Valle. Domino los lenguajes de HTML, CSS, SCSS y JavaScript además de las librerías
+                        Bootstrap y
+                        React,
+                        el preprocesador SASS. Y otras habilidades como Git, GitHub, Resposive Desing</p>
+
+                    <div class="logos">
+                        <img src="img/html-5.svg" alt="" title="Html5">
+                        <img src="img/css.svg" alt="" title="Css">
+                        <img src="img/kisspng-javascript-logo-html-clip-art-javascript-logo-5b5188b1a2a1f9.2428698915320700656662.png"
+                            alt="">
+                        <img src="img/hablar-con-descaro-a.svg" alt="" title="Sass">
+                        <img src="img/piton.svg" alt="" title="Python">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--SKILLS-->
+        <section class="section">
+            <h1>Skills</h1>
+        </section>
+        <!--GALERIA DE  MIS PROYECTOS-->
+        <section class="section">
+            <div class="slide proyecto1 ">
+                <div class="container-title">
+                    <h1 class="title-proyectos">p<br>r<br>o<br>y<br>e<br>c<br>t<br>o<br>s</h1>
+                </div>
+
+
+                <div class="galeria correciones-galeria">
+
+                    <!--GIFOS-->
+                    <div class="foto">
+                        <div class="contenedor-modal">
+                            <img src="img/gifos.png" alt="" />
+                            <div class="overlay">
+                                <h5> <a href="hhttps://daniele0802.github.io/Proyecto-GIFOS/" title="Podcast"
+                                        target="_blank">
+                                        <img src="img/logoGifos.svg" alt=""></a>GIFOS</h5>
+                                <p>Sitio web interactivo, adapatado para todas las plataformas y realizado a partir de
+                                    HTML, CSS con el preprocesador SASS y JavaScript. Es un catálogo de GIFs que cuenta
+                                    con funcionalidades como búsqueda, intereacción con una API externa y captura de
+                                    video para grabar tus propios GIFs</p>
+
+                                <br><a href="https://danielE0802.github.io/Proyecto-GIFOS/" title="Mi Podcast"
+                                    target="_blank">
+                                    <h3>Ver demo</h3>
+                                </a>
+                                <br> <a href="https://github.com/danielE0802/Proyecto-GIFOS" title="Mi Podcast"
+                                    target="_blank">
+                                    <h3>Ver repositorio</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--PODCAST-->
+                    <div class="foto">
+                        <div class="contenedor-modal">
+                            <img src="img/podcast2.png" alt="" />
+                            <div class="overlay">
+                                <h5> <a href="https://danielE0802.github.io/Podcast-SAS/" title="Podcast"
+                                        target="_blank">
+                                        <img src="img/logo.svg" alt=""></a>Podcast</h5>
+                                <p>Es un sitio web estático responsivo creado a partir de HTML, CSS y anidado con SAS.
+                                    Desde el sitio vas a poder escuchar podcasts reales que estan embebidos junto con
+                                    imágenes y texto relacionados a su contenido. Esta diseñado con una visión mobile
+                                    first,
+                                    adaptada a pantallas más grandes para que funcione en todas ellas.</p>
+
+                                <br><a href="https://danielE0802.github.io/Podcast-SAS/" title="Mi Podcast"
+                                    target="_blank">
+                                    <h3>Ver demo</h3>
+                                </a>
+                                <br> <a href="https://github.com/danielE0802/Podcast-SAS" title="Mi Podcast"
+                                    target="_blank">
+                                    <h3>Ver repositorio</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--PICTURGRAM-->
+                    <div class="foto">
+                        <div class="contenedor-modal">
+                            <img src="img/Picturgram.png" alt="" />
+                            <div class="overlay">
+                                <h5> <img src="img/Mi logo.svg" alt="">Picturgram</h5>
+                                <p>Copia de instagram, creado apartir de HTML y CSS totalmente
+                                    funcional, adaptado a todos los dispositivos. </p>
+                                <br><a href="https://danielE0802.github.io/Picturgram/" title="Mi formulario"
+                                    target="_blank">
+                                    <h3>Ver demo</h3>
+                                </a>
+                                <br> <a href="https://github.com/danielE0802/Picturgram" title="Mi formulario"
+                                    target="_blank">
+                                    <h3> Ver repositorio</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--TODOAPP-->
+                    <div class="foto">
+                        <div class="contenedor-modal">
+                            <img src="img/toDoApp.png" alt="" />
+                            <div class="overlay">
+                                <h5> <img src="img/check.webp" alt="">ToDoApp</h5>
+                                <p>
+                                    Es una aplicación web que te permite crear notas (puedes elegir los colores) y
+                                    eliminar
+                                    notas. Totalmente funcional, hecha con JavaScript. </p>
+                                <br><a href="https://daniele0802.github.io/TODO-app/" title="TODOAPP" target="_blank">
+                                    <h3>Ver demo</h3>
+                                </a>
+                                <br> <a href="https://github.com/DanielE0802/TODO-app" title="TODOAPP" target="_blank">
+                                    <h3>Ver repositorio</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide proyecto2">
+                        <h1>Mis proyectos 2</h1>
+
+                        <div class="galeria ">
+                            <!--FOOTER-->
+                            <div class="foto">
+                                <div class="contenedor-modal">
+                                    <img src="img/footer.png" alt="FOOTER" />
+                                    <div class="overlay">
+                                        <h5><img src="img/Mi logo.svg" alt=""> Footer</h5>
+                                        <p>Footer hecho apartir de HTML y CSS, con una paleta de colores llamativos y
+                                            animaciones </p> <br><a href="https://danielE0802.github.io/Footer-1/"
+                                            title="FOOTER" target="_blank">Ver demo</a>
+                                        <br> <a href="https://github.com/danielE0802/Footer-1" title="FOOTER"
+                                            target="_blank">Ver Repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FORMULARIO ACAMICA-->
+                            <div class="foto">
+                                <div class="contenedor-modal">
+                                    <img src="img/Formulario.png" alt="" />
+                                    <div class="overlay">
+                                        <h5> <img src="img/Mi logo.svg" alt="">Formulario</h5>
+                                        <p>
+                                            Diseño desde front-end de un formulario web, permitiendo escribir todos los
+                                            datos necesario para una inscripción, encuesta, etc. diseñado para todos los
+                                            dispotivos. </p>
+                                        <br><a href="https://daniele0802.github.io/Formulario-1/" title="Mi formulario"
+                                            target="_blank">
+                                            <h3>Ver demo</h3>
+                                        </a>
+                                        <br> <a href="https://github.com/daniele0802/Formulario-1" title="Mi formulario"
+                                            target="_blank">
+                                            <h3>Ver repositorio</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Calculadora-->
+                            <div class="foto">
+                                <div class="contenedor-modal">
+                                    <img src="img/Calculadora-1.png" alt="" />
+                                    <div class="overlay">
+                                        <h5> <img src="img/calcular.png" alt="">Calculadora</h5>
+                                        <p>
+                                            Calculadora totalmente funcional. !Pruébala! </p>
+                                        <br><a href="https://daniele0802.github.io/Calculadora-1/" title="Mi formulario"
+                                            target="_blank">
+                                            <h3>Ver demo</h3>
+                                        </a>
+                                        <br> <a href="https://github.com/daniele0802/Calculadora-1"
+                                            title="Mi formulario" target="_blank">
+                                            <h3>Ver repositorio</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="foto">
+                                <div class="contenedor-modal miGithub">
+                                    <img src="img/Mi_GitHub.png" alt="" />
+                                    <div class="overlay">
+                                        <h5> <img src="img/github.png" alt="">Mi GitHub</h5>
+                                        <p>
+                                            Escanea la foto o da clic <a href="https://github.com/DanielE0802"
+                                                title="Mi GitHub" target="_blank">
+                                                <span style="color: #301ecf;">Aqui</span> </a> para entrar a mi
+                                            repositorio y ver más proyectos
+                                        </p>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
         </section>
 
+        <!--CONTACTO-->
+        <section class="section">
+            <article id="contacto">
 
-        <article class="presentacion" id="mi">
-            <h2 class="acerca">Acerca de mi</h2>
-            <img class="yo" src="img/WhatsApp Image 2021-02-19 at 4.19.22 PM.jpeg" alt="">
+                <div class="container-form">
 
-
-
-            <div class="presentacion-derecha">
-
-
-                <h2>Acerca de mi</h2>
-                <p class="uno">Hola, Bienvenido! Mi nombre es Daniel Estupiñán Ramos pero me puedes decir Dani. Tengo 19
-                    años me gusta el futbol, las computadoras y viajar.</p>
-
-
-                <p>Desarrollador web full stack con Protalento y estudiante de ingeniería civil en la Universidad Del
-                    Valle. Domino los lenguajes de HTML, CSS, SCSS y JavaScript además de las librerías Bootstrap y
-                    React,
-                    el preprocesador SASS. Y otras habilidades como Git, GitHub, Resposive Desing</p>
-
-                <div class="logos">
-                    <img src="img/html-5.svg" alt="" title="Html5">
-                    <img src="img/css.svg" alt="" title="Css">
-                    <img src="img/kisspng-javascript-logo-html-clip-art-javascript-logo-5b5188b1a2a1f9.2428698915320700656662.png"
-                        alt="">
-                    <img src="img/hablar-con-descaro-a.svg" alt="" title="Sass">
-                    <img src="img/piton.svg" alt="" title="Python">
-                </div>
-            </div>
-        </article>
-
-        <article>
-
-            <h2 class="title-proyectos" id="trabajos">Algunos de mis proyectos</h2>
-            <!-- 
-            <div class="container-proyectos">
-
-                <div class="proyectos">
-
-                    <img src="img/podcast2.png" alt="">
-
-                    <div class="podcast-info">
-                        <h4>Podcast</h4> <a href=""><img src="img/logo.svg" alt=""></a>
-                        <a href="">Ver repositorio</a>
-                        <a href="">Ver demo</a>
+                    <div class="title-form">
+                        <h2>Contacto</h2>
                     </div>
 
-                </div>
-
-                <div class="proyectos">
-
-                    <img src="img/footer.png" alt="">
-
-                    <div class="footer-info">
-                        <h4>Podcast</h4> <a href=""><img src="img/Mi logo.svg" alt=""></a>
-                        <a href="">Ver repositorio</a>
-                        <a href="">Ver demo</a>
-                    </div>
-
-                </div>
-
-            </div> -->
-
-            <!--
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/podcast2.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5> <a href="https://danielE0802.github.io/Podcast-SAS/" title="Podcast" target="_blank">
-                                    <img src="img/logo.svg" alt=""></a>Podcast</h5>
-                            <p>Es un sitio web estático responsivo creado a partir de HTML, CSS y anidado con SAS.
-                                Desde el sitio vas a poder escuchar podcasts reales que estan embebidos junto con
-                                imágenes y texto relacionados a su contenido. Esta diseñado con una visión mobile first,
-                                adaptada a pantallas más grandes para que funcione en todas ellas.
-
-                                <br><a href="https://danielE0802.github.io/Podcast-SAS/" title="Mi formulario"
-                                    target="_blank">Ver demo</a>
-                                <br> <a href="https://github.com/danielE0802/Podcast-SAS" title="Mi formulario"
-                                    target="_blank">Ver Repositorio</a>
+                    <div class="info">
+                        <div class="direccion">
+                            <img src="img/ubi.png" alt="">
+                            <h3>Dirección</h3>
+                            <p>Palmira, Valle Del Cauca, Colombia</p>
                         </div>
-
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/footer.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><img src="img/Mi logo.svg" alt=""> Footer</h5>
-                            <p>Footer <br><a href="https://danielE0802.github.io/Footer-1/" title="Mi formulario"
-                                    target="_blank">Ver demo</a>
-                                <br> <a href="https://github.com/danielE0802/Footer-1" title="Mi formulario"
-                                    target="_blank">Ver Repositorio</a>
+                        <div class="email">
+                            <img src="img/mail.png" alt="">
+                            <h3>Mi Email</h3>
+                            <p>Danielestupinan0802@gmail.com</p>
                         </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Imagen1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5> <img src="img/Mi logo.svg" alt="">Formulario</h5>
-                            <p>Formulario con una paleta de colores vivos, creado apartir de HTML y CSS totalmente
-                                funcional, adaptado a todos los dispositivos. <br><a
-                                    href="https://danielE0802.github.io/Formulario-1/" title="Mi formulario"
-                                    target="_blank">Ver demo</a>
-                                <br> <a href="https://github.com/danielE0802/Formulario-1" title="Mi formulario"
-                                    target="_blank">Ver Repositorio</a>
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/Picturgram.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5> <img src="img/Mi logo.svg" alt="">Picturgram</h5>
-                            <p>Copia de instagram, creado apartir de HTML y CSS totalmente
-                                funcional, adaptado a todos los dispositivos. <br><a
-                                    href="https://danielE0802.github.io/Picturgram/" title="Mi formulario"
-                                    target="_blank">Ver demo</a>
-                                <br> <a href="https://github.com/danielE0802/Picturgram" title="Mi formulario"
-                                    target="_blank">Ver Repositorio</a>
+                        <div class="tel">
+                            <img src="img/tel.png" alt="">
+                            <h3> Llamame </h3>
+                            <p>+57 3054339035 <br> +57 3156985569</p>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="img/Calculadora-1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5> <img src="img/Mi logo.svg" alt="">Calculadora</h5>
-                            <p>Una calculadora totalmente funcional creada a partir de HTML, CSS y JavaScript.<br><a
-                                    href="https://danielE0802.github.io/Calculadora-1/" title="Mi formulario"
-                                    target="_blank">Ver demo</a>
-                                <br> <a href="https://github.com/daniel08022/Calculadora-1" title="Mi formulario"
-                                    target="_blank">Ver Repositorio</a>
+                    <form action="enviar.php" id="formulario" method="POST">
+
+                        <div class="arriba">
+                            <input type="name" name="nombre" placeholder="Tu nombre" required>
+                            <input type="email" name="email" placeholder="Ingrese su email" required>
                         </div>
-                    </div>
+                        <div class="abajo">
+                            <input type="number" name="numero" placeholder="Asunto" required>
 
-                    <div class="carousel-item">
-                        <img src="img/toDoApp.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5> <img src="img/Mi logo.svg" alt="">ToDoApp</h5>
-                            <p>
-                                Es una aplicación web que te permite crear notas (puedes elegir los colores) y eliminar
-                                notas. Totalmente funcional, hecha con JavaScript.
-                                <br><a href="https://danielE0802.github.io/Picturgram/" title="Mi formulario"
-                                    target="_blank">Ver demo</a>
-                                <br> <a href="https://github.com/daniel08022/Picturgram" title="Mi formulario"
-                                    target="_blank">Ver Repositorio</a>
                         </div>
-                    </div>
-                    -->
+                        <textarea name="mensaje" id="texto" cols="20" rows="5" placeholder="Deje su mensaje"></textarea>
 
+                        <input type="submit" placeholder="" id="enviar" class="enviar" name="enviar">
+                    </form>
+                    <br><br><br>
+
+                    <div id="respuesta"></div>
 
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-
-        </article>
-
-        <article id="contacto">
-
-            <div class="container-form">
-
-                <div class="title-form">
-                    <h2>Contacto</h2>
-                </div>
-
-                <div class="info">
-                    <div class="direccion">
-                        <img src="img/ubi.png" alt="">
-                        <h3>Dirección</h3>
-                        <p>Palmira, Valle Del Cauca, Colombia</p>
-                    </div>
-                    <div class="email">
-                        <img src="img/mail.png" alt="">
-                        <h3>Mi Email</h3>
-                        <p>Danielestupinan0802@gmail.com</p>
-                    </div>
-                    <div class="tel">
-                        <img src="img/tel.png" alt="">
-                        <h3> Llamame </h3>
-                        <p>+57 3054339035 <br> +57 3156985569</p>
-                    </div>
-                </div>
-
-                <form action="enviar.php" id="formulario" method="POST">
-
-                    <div class="arriba">
-                        <input type="name"  name="nombre" placeholder="Tu nombre" required>
-                        <input type="email" name="email" placeholder="Ingrese su email" required >
-                    </div>
-                    <div class="abajo">
-                        <input type="number" name="numero" placeholder="Asunto" required >
-                        
-                    </div>
-                    <textarea name="mensaje" id="texto" cols="20" rows="5" placeholder="Deje su mensaje"
-                        ></textarea>
-
-                    <input type="submit" placeholder="" id="enviar" class="enviar" name="enviar">
-                </form>
-                <br><br><br>
-
-                <div id="respuesta"></div>
-
-            </div>
-        </article>
+            </article>
+        </section>
 
     </main>
 
-    <footer>
-        <div class="derechos">
-            <img src="img/derechos-de-autor.png" alt="">
-            <span>Todos los derechos reservados 2020.</span>
-        </div>
-        <div class="redes">
-            <a href=""><img src="img/facebook.png" alt="https://www.facebook.com/daniel.estupinanramos/"></a>
-            <a href=""><img src="img/instagram.png" alt="https://www.instagram.com/daniel_estupinan_r/"></a>
-            <a href=""> <img src="img/github.png" alt="https://github.com/daniel08022/"></a>
-
-
-        </div>
-    </footer>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
 
 </html>
