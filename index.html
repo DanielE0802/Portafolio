@@ -14,26 +14,29 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <img src="img/Mi logo.svg" class="logo" alt="Daniel Estupiñán" title="Daniel Estupiñán">
-        <ul id="miMenu" class="menu">
-            <li data-menuanchor="Inicio" class="active">
-                <a href="#Inicio">Inicio</a>
-            </li>
-            <li data-menuanchor="Acerca">
-                <a href="#Acerca">Acerca</a>
-            </li>
-            <li data-menuanchor="Skills">
-                <a href="#Skills">Skills</a>
-            </li>
-            <li data-menuanchor="Proyectos">
-                <a href="#Proyectos">Proyectos</a>
-            </li>
-            <li data-menuanchor="Contacto">
-                <a href="#Contacto">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="nav" id="nav">
+            <img src="img/Mi logo.svg" class="logo" alt="Daniel Estupiñán" title="Daniel Estupiñán">
+            <ul id="miMenu" class="menu">
+                <li data-menuanchor="Inicio" class="active" id="inicio">
+                    <a href="#Inicio">Inicio</a>
+                </li>
+                <li data-menuanchor="Acerca" id="acerca">
+                    <a href="#Acerca">Acerca</a>
+                </li>
+                <li data-menuanchor="Skills">
+                    <a href="#Skills">Skills</a>
+                </li>
+                <li data-menuanchor="Proyectos">
+                    <a href="#Proyectos">Proyectos</a>
+                </li>
+                <li data-menuanchor="Contacto">
+                    <a href="#Contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
 
     <!--BARRA IZQUIERDA DE REDES SOCIALES-->
     <div class="redes-sociales">
@@ -43,9 +46,13 @@
                 <a href="www.linkedin.com/in/daniel-estupiñán" target="_blank"><img src="img/linkedin.png" alt=""></a>
             </li>
             <li>
+                <a href="mailto:danielestupinan0802@gmail.com" target="_blank"><img src="img/gmail.png" alt=""></a>
+            </li>
+            <li>
                 <a href="https://github.com/DanielE0802" target="_blank"><img src="img/github.png" alt=""></a>
             </li>
 
+       
         </ul>
     </div>
 
@@ -86,7 +93,7 @@
         </header>
 
         <!--ACERCA DE MI-->
-        <section class="section">
+        <section class="section" id="mi">
             <div class="presentacion">
                 <div class="presentacion-izquierda">
                     <img class="yo" src="img/WhatsApp Image 2021-02-19 at 4.19.22 PM.jpeg" alt="" id="mi">
@@ -94,17 +101,13 @@
 
                 <div class="presentacion-derecha">
                     <h2>Acerca de mi</h2>
-                    <p class="uno">Hola, Bienvenido! Mi nombre es Daniel Estupiñán Ramos pero me puedes decir Dani.
-                        Tengo 19
-                        años me gusta el futbol, las computadoras y viajar.</p>
+                    <p class="uno">Hola, Bienvenido! Mi nombre es Daniel Estupiñán Ramos,
+                        Tengo 19 años me gusta el futbol, las computadoras y viajar.</p>
 
 
-                    <p>Desarrollador web full stack con Protalento y estudiante de ingeniería civil en la
-                        Universidad Del
-                        Valle. Domino los lenguajes de HTML, CSS, SCSS y JavaScript además de las librerías
-                        Bootstrap y
-                        React,
-                        el preprocesador SASS. Y otras habilidades como Git, GitHub, Resposive Desing</p>
+                    <p>Desarrollador Front-End e ingeniero civil en formación Domino los lenguajes de HTML, CSS y
+                        JavaScript. Especialista en el manejo y creación de interfaces de usuarios a través de React, complementado con JQuery, Fullpage.js. Además de otras habilidades como el manejo del
+                        preprocesador SASS, GitHub y metodologías agiles como Scrum.  </p>
 
                     <div class="logos">
                         <img src="img/html-5.svg" alt="" title="Html5">
@@ -112,7 +115,7 @@
                         <img src="img/kisspng-javascript-logo-html-clip-art-javascript-logo-5b5188b1a2a1f9.2428698915320700656662.png"
                             alt="">
                         <img src="img/hablar-con-descaro-a.svg" alt="" title="Sass">
-                        <img src="img/piton.svg" alt="" title="Python">
+                        <img src="img/react_original_wordmark_logo_icon_146375.png" alt="" title="Python">
                     </div>
                 </div>
 
@@ -353,10 +356,10 @@
         </section>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="app.js"></script>
 
 </html>

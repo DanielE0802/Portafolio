@@ -6,7 +6,7 @@
     z-index: 70;
     width: 100%;
     margin: 0;
-    padding: 10px 70px 10px 70px;
+    padding: 10px 110px 10px 70px;
     
     img{
         width: 50px;
@@ -17,14 +17,14 @@
     li,a{
         display: inline-block;
         margin: 10px;
-       
         text-decoration: none;
         text-transform: uppercase;
         font-family: $josefin;
         font-size: 19px;
         color: #c2c2c2;
+        transition: color .5s ease;
         &:hover{
-            transition: all .5s ease;
+            
             color: #fff;
             
         }
@@ -40,16 +40,34 @@
             color: #fff;
             &:hover{
                 transition: all .5s ease;
-                color: #30d2be;
                 
             }
         }
 
         &:hover{
-            border-bottom: 3px solid #30d2be;
+            border-bottom: 3px solid #fff;
             transition: all .5s ease;
         }
     }
 
+}
+
+.nuevoBar{
+    backdrop-filter: blur(10px);
+    background-color: hsla(0, 0%, 14%, 0.8);
+    transition: all 0.8s ease;
+    li,a{
+        transform: scale(0.88);
+        transition: transform 0.8s ease;
+        
+    }
+    img{
+        transform: scale(0.88);
+        transition: transform 0.8s ease;
+    }
+    
+    padding-bottom: 0px;
+    padding-top: 4px;
+  
 }
 

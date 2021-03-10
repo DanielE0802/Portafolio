@@ -16,7 +16,7 @@
   z-index: 70;
   width: 100%;
   margin: 0;
-  padding: 10px 70px 10px 70px; }
+  padding: 10px 110px 10px 70px; }
   .nav img {
     width: 50px;
     margin-left: 80px; }
@@ -27,9 +27,9 @@
     text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
     font-size: 19px;
-    color: #c2c2c2; }
+    color: #c2c2c2;
+    transition: color .5s ease; }
     .nav li:hover, .nav a:hover {
-      transition: all .5s ease;
       color: #fff; }
   .nav .active {
     border-bottom: 3px solid #fff;
@@ -37,11 +37,23 @@
     .nav .active a {
       color: #fff; }
       .nav .active a:hover {
-        transition: all .5s ease;
-        color: #30d2be; }
+        transition: all .5s ease; }
     .nav .active:hover {
-      border-bottom: 3px solid #30d2be;
+      border-bottom: 3px solid #fff;
       transition: all .5s ease; }
+
+.nuevoBar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(36, 36, 36, 0.8);
+  transition: all 0.8s ease;
+  padding-bottom: 0px;
+  padding-top: 4px; }
+  .nuevoBar li, .nuevoBar a {
+    transform: scale(0.88);
+    transition: transform 0.8s ease; }
+  .nuevoBar img {
+    transform: scale(0.88);
+    transition: transform 0.8s ease; }
 
 html,
 body,
@@ -142,7 +154,8 @@ main {
     .presentacion .presentacion-derecha h2 {
       font-size: 3.5vw;
       border-left: #3498db 5px solid;
-      padding-left: 10px; }
+      padding-left: 10px;
+      font-weight: 500; }
     .presentacion .presentacion-derecha p {
       font-size: 1.5vw;
       text-align: justify; }
@@ -260,34 +273,7 @@ main {
 
 .foto:hover .overlay {
   height: 100%;
-  cursor: pointer;
   border-radius: 5px; }
-
-/*---------------------*/
-.contenedor-modal.active {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  z-index: 2; }
-
-.contenedor-modal.active img {
-  z-index: 3;
-  width: 700px;
-  height: 700px; }
-
-.contenedor-modal.active::after {
-  position: fixed;
-  content: '';
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(211, 211, 211, 0.459); }
 
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #3584a7;

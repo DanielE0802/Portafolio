@@ -1,16 +1,4 @@
-// .proyecto1{
-//     background: linear-gradient(120deg,
-//     #473b7b 0%,
-//     #3584a7 20%,
-//     #30d2be 100%);
-// }
 
-// .proyecto2{
-//     background: linear-gradient(120deg,
-//     #30d2be 0%,
-//     #3584a7 70%,
-//     #473b7b 80%);
-// }
 .galeria {
     display: flex;
     width: 85%;
@@ -146,38 +134,7 @@
 
 .foto:hover .overlay {
     height: 100%;
-    cursor: pointer;
     border-radius: 5px;
-}
-
-/*---------------------*/
-
-.contenedor-modal.active {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.contenedor-modal.active img {
-    z-index: 3;
-    width: 700px;
-    height: 700px;
-}
-
-.contenedor-modal.active::after {
-    position: fixed;
-    content: '';
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(211, 211, 211, 0.459);
 }
 
 .fp-controlArrow.fp-next {
