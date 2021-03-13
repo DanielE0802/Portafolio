@@ -17,6 +17,7 @@
     <header>
         <nav class="nav" id="nav">
             <img src="img/Mi logo.svg" class="logo" alt="Daniel Estupiñán" title="Daniel Estupiñán">
+            <img src="img/burger-modo-noct.svg" alt="" class="burguer" id="btnBurguer">
             <ul id="miMenu" class="menu">
                 <li data-menuanchor="Inicio" class="active" id="inicio">
                     <a href="#Inicio">Inicio</a>
@@ -24,9 +25,9 @@
                 <li data-menuanchor="Acerca" id="acerca">
                     <a href="#Acerca">Acerca</a>
                 </li>
-                <li data-menuanchor="Skills">
+                <!-- <li data-menuanchor="Skills">
                     <a href="#Skills">Skills</a>
-                </li>
+                </li> -->
                 <li data-menuanchor="Proyectos">
                     <a href="#Proyectos">Proyectos</a>
                 </li>
@@ -35,6 +36,7 @@
                 </li>
             </ul>
         </nav>
+     
     </header>
 
 
@@ -66,7 +68,7 @@
                 <div class="cont-texto">
                     <div class="texto-izquierdo">
                         <h1 class="titulo">¡Bienvenidos a mi portafolio!</h1>
-                        <a class="btnEmpecemos" href="#mi"><b>Empecemos! </b> </a>
+                        <a class="btnEmpecemos" href="#Acerca"><b>Empecemos! </b> </a>
                     </div>
                     <div class="texto-derecho">
                         <img src="img/code.png" alt="">
@@ -75,7 +77,7 @@
                     </div>
 
                     <div class="contenedor-icono">
-                        <p><a href="#" class="colorP">
+                        <p><a href="#Acerca" class="colorP">
                                 <i class="fas fa-chevron-down"></i>
                             </a></p>
                     </div>
@@ -122,9 +124,9 @@
             </div>
         </section>
         <!--SKILLS-->
-        <section class="section">
+        <!-- <section class="section">
             <h1>Skills</h1>
-        </section>
+        </section> -->
         <!--GALERIA DE  MIS PROYECTOS-->
         <section class="section">
             <div class="slide proyecto1 ">
@@ -226,7 +228,7 @@
 
 
                     <div class="slide proyecto2">
-                        <h1>Mis proyectos 2</h1>
+        
 
                         <div class="galeria ">
                             <!--FOOTER-->
@@ -333,14 +335,14 @@
                         </div>
                     </div>
 
-                    <form action="enviar.php" id="formulario" method="POST">
+                    <form action="MAILTO:danielestupinan0802@gmail.com" id="formulario" method="POST" enctype="text/plain">
 
                         <div class="arriba">
                             <input type="name" name="nombre" placeholder="Tu nombre" required>
                             <input type="email" name="email" placeholder="Ingrese su email" required>
                         </div>
                         <div class="abajo">
-                            <input type="number" name="numero" placeholder="Asunto" required>
+                            <input type="text" name="Asunto" placeholder="Asunto" required>
 
                         </div>
                         <textarea name="mensaje" id="texto" cols="20" rows="5" placeholder="Deje su mensaje"></textarea>
@@ -358,7 +360,8 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
 
 </body>
 

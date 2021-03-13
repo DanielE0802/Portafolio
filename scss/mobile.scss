@@ -1,0 +1,142 @@
+@media screen and (max-width:720px) {
+
+    //Menú hamburguesa
+    .nav {
+        padding: 10px 8vw 10px 8vw;
+
+        .menu {
+            display: none;
+
+        }
+
+        .logo {
+            width: 30px;
+            margin-left: 0px;
+        }
+
+        .activo {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 50px;
+            height: 100vh;
+            width: 100vw;
+            backdrop-filter: blur(10px);
+            background-color: hsla(0, 0%, 14%, 0.8);
+            transition: all 0.8s ease;
+
+            li,
+            a {
+                z-index: 99;
+                font-size: 15px;
+                text-align: center;
+
+            }
+
+        }
+
+        .burguer {
+            display: inline-block;
+            width: 6vw;
+
+        }
+
+        .burguer:active {
+            transform: rotate(360deg);
+        }
+    }
+
+    .redes-sociales {
+        display: none;
+    }
+
+    //INICIO
+
+
+    .principal {
+        padding-top: 60px;
+        height: 100vh;
+      
+        align-items: center;
+        display: flex;
+
+        .cont-texto {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 100px;
+
+            .texto-izquierdo {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 2.7em;
+                }
+
+                .btnEmpecemos {
+                    width: 200px;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: #FFF;
+                        background: #3498db;
+                    }
+                }
+            }
+
+            .colorP {
+                color: #333;
+            }
+
+            .contenedor-icono {
+                position: absolute;
+                z-index: 99;
+                bottom: 3%;
+                left: 46%;
+                font-size: 35px;
+                animation: bajar-subir 1.5s ease infinite;
+
+            }
+        }
+
+        .texto-derecho {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100vw;
+            padding-top: 70px;
+            height: 30vh;
+            top: 0;
+            img {
+                width: 35vw;
+                align-self: center;
+                padding-bottom: 50px;
+            }
+    
+            transform: translate(0px,0px);
+
+    
+            h1 {
+     
+                font-size: 30px;
+                text-align: center;
+                color: #fff;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                transform: translateY(-40px);
+            }
+    
+            h2 {
+                font-size: 20px;
+            }
+    
+        }
+    }
+
+
+}

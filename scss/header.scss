@@ -6,7 +6,7 @@
     z-index: 70;
     width: 100%;
     margin: 0;
-    padding: 10px 110px 10px 70px;
+    padding: 10px 8vw 10px 70px;
     
     img{
         width: 50px;
@@ -20,7 +20,7 @@
         text-decoration: none;
         text-transform: uppercase;
         font-family: $josefin;
-        font-size: 19px;
+        font-size: 1.14em;
         color: #c2c2c2;
         transition: color .5s ease;
         &:hover{
@@ -51,6 +51,12 @@
     }
 
 }
+
+.burguer{
+    display: none;
+}
+
+
 
 .nuevoBar{
     backdrop-filter: blur(10px);

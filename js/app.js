@@ -2,8 +2,8 @@
 const seccionesPagina = new fullpage('#fullpage',{
 	navigation: true,
 	navigationPosition: 'right',
-	anchors: ['Inicio', 'Acerca', 'Skills', 'Proyectos','Contacto'],
-	navigationTooltips: ['Inicio', 'Acerca', 'Skills', 'Proyectos','Contacto'],
+	anchors: ['Inicio', 'Acerca', 'Proyectos','Contacto'],
+	navigationTooltips: ['Inicio', 'Acerca', 'Proyectos','Contacto'],
 	scrollingSpeed: 800,
 	easing: 'easeInOutCubic',
 	menu: '#miMenu', 
