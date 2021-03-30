@@ -58,7 +58,6 @@
     .principal {
         padding-top: 60px;
         height: 100vh;
-      
         align-items: center;
         display: flex;
 
@@ -74,13 +73,18 @@
                 display: flex;
                 flex-direction: column;
 
+                
+
                 h1 {
-                    font-size: 2.7em;
+                    font-size: 2.45em;
+                    max-width: 95%;
+                    align-self: center;
+
                 }
 
                 .btnEmpecemos {
-                    width: 200px;
-                    font-size: 14px;
+                    width: 180px;
+                    font-size: 13px;
 
                     &:hover {
                         color: #FFF;
@@ -94,12 +98,9 @@
             }
 
             .contenedor-icono {
-                position: absolute;
-                z-index: 99;
-                bottom: 3%;
                 left: 46%;
                 font-size: 35px;
-                animation: bajar-subir 1.5s ease infinite;
+
 
             }
         }
@@ -112,31 +113,124 @@
             padding-top: 70px;
             height: 30vh;
             top: 0;
+
             img {
-                width: 35vw;
+                width: 32vw;
                 align-self: center;
                 padding-bottom: 50px;
             }
-    
-            transform: translate(0px,0px);
+
+            transform: translate(0px, 0px);
+
+
+            h1 {
+
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+        }
+    }
+
+
+    .presentacion {
+        display: block;
+        flex-direction: column;
+        height: 80vh;
+        width: 100vw;
+        padding-top: 0px;
+        padding-left: 0vw;
+        padding-right: 0vw;
 
     
-            h1 {
+        &::before{
+            content: "Acerca de mi";
+            font-size: 10vw;
+                border-left: #3498db 5px solid;
+                padding-left: 10px;
+                font-weight: 500;
+                margin-left: 10vw;
+                margin-bottom: 50px;
+        }
+        .presentacion-izquierda {
+            display: flex;
+            justify-content: center;
+
+            .yo {
+                width: 43vw;
+                margin-top: 30px;
+
+            }
+        }
+    
+    
+        .presentacion-derecha {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            width: 100vw;
+            display: block;
+            h2 {
+               display: none;
      
-                font-size: 30px;
-                text-align: center;
-                color: #fff;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 700;
-                transform: translateY(-40px);
             }
     
-            h2 {
-                font-size: 20px;
+            p {
+                font-size: 3.2vw;
+            }
+    
+            .uno {
+                padding-top: 35px;
+            }
+    
+            .logos {
+                margin-left: 10vw;
+                margin-right: 10vw;
+    
+                .presentacion-logos img{
+                    width: 15vw;
+                    padding: 5px;
+                    transition: all .3s ease;
+                
+                }
+    
+                .presentacion-logos{
+                    transition: all .3s ease;
+                    &::after{
+                        transition: background 0.5s ease;
+                        content: " ";
+                        background-color: #fff;
+                        opacity: .7;
+                        filter: blur(.33rem);
+                     
+                    }
+    
+                }
+            
+                .presentacion-logos:hover{
+                    transform: scale(1.1);
+                   
+                    &::after{
+                        content: " ";
+                        position: absolute ;
+                        display: inline-block;
+                        transform: translate(-128%, 16vh);
+                        width: 5vw;
+                        height: 10px;
+                        background-color: #505050;
+                        opacity: .7;
+                        filter: blur(.33rem);
+                     
+                    }
+                }
             }
     
         }
+    
     }
+
 
 
 }

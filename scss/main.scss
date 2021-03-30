@@ -166,14 +166,43 @@ main {
             justify-content: center;
             padding-top: 40px;
 
-            img {
+            .presentacion-logos img{
                 width: 8vw;
                 padding: 18px;
-
+                transition: all .3s ease;
+            
             }
 
-        }
+            .presentacion-logos{
+                transition: all .3s ease;
+                &::after{
+                    transition: background 0.5s ease;
+                    content: " ";
+                    background-color: #fff;
+                    opacity: .7;
+                    filter: blur(.33rem);
+                 
+                }
 
+            }
+        
+            .presentacion-logos:hover{
+                transform: scale(1.1);
+               
+                &::after{
+                    content: " ";
+                    position: absolute ;
+                    display: inline-block;
+                    transform: translate(-128%, 16vh);
+                    width: 5vw;
+                    height: 10px;
+                    background-color: #505050;
+                    opacity: .7;
+                    filter: blur(.33rem);
+                 
+                }
+            }
+        }
 
     }
 
