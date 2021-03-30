@@ -143,14 +143,23 @@
 .fp-controlArrow.fp-next {
     border-color: transparent transparent transparent #3584a7;
     margin-top: 100px;
+    transition: all .5s ease;
+}
 
-    &::after {
-        content: "Siguiente";
-    }
+.fp-controlArrow.fp-next:hover{
+    transform: scale(1.2);
+    border-color: transparent transparent transparent #505050;
+}
+
+.fp-controlArrow.fp-prev:hover{
+    transform: scale(1.2);
+    border-color: transparent #505050 transparent transparent ;
+    
 }
 
 .fp-controlArrow.fp-prev {
     border-color: transparent #3584a7 transparent transparent;
     margin-top: 100px;
     z-index: 1000;
+    transition: all .4s ease;
 }
