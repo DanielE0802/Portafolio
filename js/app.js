@@ -17,5 +17,17 @@ const seccionesPagina = new fullpage('#fullpage', {
 			nav.classList.remove("nuevoBar");
 		}
 
+		else if( origin.anchor == 'Proyectos' & direction == 'up'){
+			nav.classList.remove("nuevoBar");
+		}
+
+		else if( origin.anchor == 'Contacto' & direction == 'up'){
+			nav.classList.remove("nuevoBar");
+		}
+
 	}
 });
+
+if (screen.width < 600){
+	
+}
