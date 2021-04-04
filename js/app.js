@@ -8,28 +8,23 @@ const seccionesPagina = new fullpage('#fullpage', {
 	menu: '#miMenu',
 	showActiveTooltip: true,
 	onLeave: function (origin, destination, direction) {
-		if(origin.anchor == 'Inicio'){
+		if (origin.anchor == 'Inicio') {
 			nav.classList.add("nuevoBar");
-		}
-
-		else if( origin.anchor == 'Acerca' && destination.anchor =='Inicio' && direction == 'up'){
+		} else if (origin.anchor == 'Acerca' && destination.anchor == 'Inicio' && direction == 'up') {
 			nav.classList.remove("nuevoBar");
-		}
-
-		else if( origin.anchor == 'Proyectos'&& destination.anchor =='Inicio' ){
+		} else if (origin.anchor == 'Proyectos' && destination.anchor == 'Inicio') {
 			nav.classList.remove("nuevoBar");
-		}
-
-		else if( origin.anchor == 'Contacto' && destination.anchor =='Inicio' ){
+		} else if (origin.anchor == 'Contacto' && destination.anchor == 'Inicio') {
 			nav.classList.remove("nuevoBar");
 		}
 
 	}
 });
 
-let slideEdit= document.getElementById("slideEdit");
 
-let contenidoSlide1= ` <div class="container-title">
+let slideEdit = document.getElementById("slideEdit");
+
+let contenidoSlide1 = ` <div class="container-title">
 <h1 class="title-proyectos">p<br>r<br>o<br>y<br>e<br>c<br>t<br>o<br>s</h1>
 </div>
 
@@ -86,7 +81,7 @@ let contenidoSlide1= ` <div class="container-title">
 	</div>
 </div>`
 
-let contenidoSlide2= `   <div class="slide proyecto2" id="slideEdit2">
+let contenidoSlide2 = `   <div class="slide proyecto2" id="slideEdit2">
 
 
 <div class="galeria ">
@@ -126,7 +121,7 @@ let contenidoSlide2= `   <div class="slide proyecto2" id="slideEdit2">
 	<!--TODOAPP-->
 	<div class="foto">
 		<div class="contenedor-modal">
-			<img src="img/toDoApp.png" alt="" />
+			<img src="img/MYTODOAPP.png" alt="" />
 			<div class="overlay">
 				<h5> <img src="img/check.webp" alt="">ToDoApp</h5>
 				<p>
@@ -144,7 +139,7 @@ let contenidoSlide2= `   <div class="slide proyecto2" id="slideEdit2">
 	</div>
 `
 
-let contenidoSlide3= `<div class="galeria ">
+let contenidoSlide3 = `<div class="galeria ">
 <!--FOOTER-->
 <div class="foto">
 <div class="contenedor-modal">
@@ -206,26 +201,37 @@ let contenidoSlide3= `<div class="galeria ">
 </div>`
 
 
-let slideEdit2= document.getElementById("slideEdit2");
+let slideEdit2 = document.getElementById("slideEdit2");
 containerGaleria = document.getElementById('containerGaleria')
 
-let slideEdit3= document.getElementById("slideEdit3");
+let slideEdit3 = document.getElementById("slideEdit3");
 
 
 
 
 
-if (screen.width < 600){
+if (screen.width < 600) {
 	slideEdit.innerHTML = contenidoSlide1;
 	slideEdit2.innerHTML = contenidoSlide2;
 
 	slideEdit3.classList.remove('display-none')
 
-	slideEdit3.innerHTML =contenidoSlide3;
+	slideEdit3.innerHTML = contenidoSlide3;
 
-}
+	setInterval(function () {
+		let body = document.getElementsByTagName('body')
+		let atributo = body[0].getAttribute('class')
 
-else{	
+		if (atributo != "fp-viewing-Inicio") {
+			nav.classList.add("nuevoBar");
+		} else {
+			nav.classList.remove("nuevoBar");
+		}
+
+	}, 400)
+
+
+} else {
 	slideEdit3.classList.add('display-none')
 
 }

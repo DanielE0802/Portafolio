@@ -225,11 +225,13 @@ main {
     .galeria .foto .miGithub img {
       width: 460px;
       height: 270px;
-      object-fit: scale-down; }
+      object-fit: scale-down;
+      object-position: center; }
     .galeria .foto img {
       width: 100%;
       height: 270px;
       object-fit: cover;
+      object-position: 0 0.01vw;
       border-radius: 5px; }
     .galeria .foto:hover {
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
@@ -446,12 +448,13 @@ form {
       position: absolute;
       top: 0;
       right: 0;
-      margin-top: 50px;
+      margin-top: 40px;
       height: 100vh;
       width: 100vw;
       backdrop-filter: blur(10px);
       background-color: rgba(36, 36, 36, 0.8);
-      transition: all 0.8s ease; }
+      transition: all 0.8s ease;
+      animation: bar 0.8s both ease-in-out; }
       .nav .activo li,
       .nav .activo a {
         z-index: 99;
@@ -466,8 +469,30 @@ form {
   .redes-sociales {
     display: none; }
 
+  .nuevoBar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(36, 36, 36, 0.8);
+    transition: all 0.8s ease;
+    height: 40px;
+    padding-bottom: 0px;
+    padding-top: 4px; }
+    .nuevoBar li,
+    .nuevoBar a {
+      transform: scale(0.88);
+      transition: transform 0.8s ease; }
+    .nuevoBar img {
+      transform: scale(0.88);
+      transition: transform 0.8s ease; }
+
+  @keyframes bar {
+    0% {
+      display: none;
+      height: 0px; }
+    100% {
+      display: flex;
+      height: 100vh; } }
   .principal {
-    padding-top: 60px;
+    padding-top: 0;
     height: 100vh;
     align-items: center;
     display: flex; }
@@ -517,7 +542,7 @@ form {
   .presentacion {
     display: block;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     padding-top: 0px;
     padding-left: 0vw;

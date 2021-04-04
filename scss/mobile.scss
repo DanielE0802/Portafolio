@@ -6,7 +6,6 @@
 
         .menu {
             display: none;
-
         }
 
         .logo {
@@ -20,12 +19,13 @@
             position: absolute;
             top: 0;
             right: 0;
-            margin-top: 50px;
+            margin-top: 40px;
             height: 100vh;
             width: 100vw;
             backdrop-filter: blur(10px);
             background-color: hsla(0, 0%, 14%, 0.8);
             transition: all 0.8s ease;
+            animation: bar .8s both ease-in-out ;
 
             li,
             a {
@@ -52,11 +52,50 @@
         display: none;
     }
 
+
+    .nuevoBar {
+        backdrop-filter: blur(10px);
+        background-color: hsla(0, 0%, 14%, 0.8);
+        transition: all 0.8s ease;
+        height: 40px;
+
+        li,
+        a {
+            transform: scale(0.88);
+            transition: transform 0.8s ease;
+
+        }
+
+        img {
+            transform: scale(0.88);
+            transition: transform 0.8s ease;
+        }
+
+        padding-bottom: 0px;
+        padding-top: 4px;
+
+    }
+
+    @keyframes bar {
+        0%{
+            display: none;
+            height: 0px;
+
+        }
+        50%{
+            
+        }
+        100%{
+            display: flex;
+            height: 100vh;
+        }
+    }
+
     //INICIO
 
 
     .principal {
-        padding-top: 60px;
+        padding-top: 0;
         height: 100vh;
         align-items: center;
         display: flex;
@@ -139,7 +178,7 @@
     .presentacion {
         display: block;
         flex-direction: column;
-        height: 80vh;
+        height: 90vh;
         width: 100vw;
         padding-top: 0px;
         padding-left: 0vw;
@@ -386,18 +425,18 @@
             font-size: 2.2em;
             font-family: $jost;
             margin-top: 80px;
-    
+
             &::before {
                 content: "";
                 border-left: #3498db 5px solid;
                 margin-right: 5px;
             }
         }
-    
-    
-    
+
+
+
     }
-    
+
     .info {
         display: flex;
         flex-wrap: wrap;
@@ -405,7 +444,7 @@
         margin-right: 3vw;
         margin-top: 20px;
         justify-content: center;
-    
+
         .direccion {
             margin: 0px 15px 0px 0px;
             order: 3;
@@ -416,65 +455,66 @@
             width: 100%;
             max-width: 37vw;
 
-    
+
         }
 
-        .tel{
+        .tel {
             order: 1;
         }
-        .email{
+
+        .email {
             max-width: 80vw;
         }
-    
+
         img {
             width: 40px;
             margin-bottom: 5px;
         }
     }
-    
-    
+
+
     form {
         display: flex;
         flex-wrap: wrap;
         margin: 0vw 9vw;
         margin-right: 9vw;
-    
+
         .arriba {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
             width: 100%;
             margin-top: 20px;
-    
+
             input {
                 width: 45%;
                 height: 20px;
-    
+
             }
         }
-    
+
         .abajo {
             width: 93.2%;
             margin-top: 12px;
-    
+
             input {
                 width: 100%;
                 height: 28px;
                 margin-left: 3.7%;
             }
         }
-    
+
         textarea {
             width: 93.2%;
             margin-left: 3.5%;
             margin-top: 10px;
             margin-bottom: 10px;
             font-family: $open;
-    
+
             &::placeholder {
                 padding-left: 5px;
             }
-    
+
             &:focus {
                 color: #555;
                 padding-left: 5px;
@@ -484,8 +524,8 @@
                 border: 1px rgba(85, 85, 85, 0.638) solid;
             }
         }
-    
-        input[type=submit]{
+
+        input[type=submit] {
             background-color: transparent;
             border: none;
             border-bottom: 2px solid #53b4f5;
@@ -496,20 +536,21 @@
             margin-bottom: 8px;
             margin-left: 47%;
             transition: all .3s ease;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.08);
-                border-bottom: 2px solid #3498db ;
+                border-bottom: 2px solid #3498db;
             }
         }
-    
+
         input {
             &::placeholder {
                 padding-left: 5px;
             }
-    
-    
+
+
         }
-    
+
     }
-    
+
 }
