@@ -203,6 +203,19 @@ main {
 .display-none {
   display: none !important; }
 
+.descargaCV {
+  font-size: 9px;
+  color: #333;
+  font-family: "Open Sans",sans-serif;
+  text-align: center; }
+
+.abajo {
+  transform: translateX(-2px);
+  font-size: 9.4px; }
+
+.aDescarga {
+  text-decoration: none; }
+
 .galeria {
   display: flex;
   width: 78%;
